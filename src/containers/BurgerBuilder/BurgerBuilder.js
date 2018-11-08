@@ -43,7 +43,7 @@ class BurgerBuilder extends Component {
     const sum = Object.keys(ingredients)
       .map(igKey => {
         return ingredients[igKey]; // el is the number accessed here
-        console.log('ingredients[igKey]', ingredients[igKey])
+        // console.log('ingredients[igKey]', ingredients[igKey])
       })
       .reduce((sum, el) => {
         return sum + el;

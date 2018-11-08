@@ -13,7 +13,7 @@ const burger = (props) => {
             console.log('arr', arr)
             console.log('el', el)
             return arr.concat(el)
-            console.log('arr after', arr)
+            // console.log('arr after', arr)
         }, []);
         if (transformIng.length === 0) {
             transformIng = <p>Please add some ingredients!</p>
