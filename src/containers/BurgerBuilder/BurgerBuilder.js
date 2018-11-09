@@ -39,7 +39,7 @@ class BurgerBuilder extends Component {
   }
 
   updatePurchaseState (ingredients) {
-    console.log('ingredients', ingredients)
+    // console.log('ingredients', ingredients)
     const sum = Object.keys(ingredients)
       .map(igKey => {
         return ingredients[igKey]; // el is the number accessed here
@@ -58,7 +58,7 @@ class BurgerBuilder extends Component {
       ...this.state.ingredients
     };
     updatedIngredients[type] = updatedCount;
-    console.log('updatedIngredients[type]', updatedIngredients[type])
+    // console.log('updatedIngredients[type]', updatedIngredients[type])
     const priceAddition = INGREDIENT_PRICE[type];
     const oldPrice = this.state.totalPrice;
     const newPrice = oldPrice + priceAddition;
